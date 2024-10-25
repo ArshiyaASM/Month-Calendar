@@ -1,0 +1,84 @@
+* {
+    padding: unset;
+    box-sizing: border-box;
+    margin: unset;
+    font-family: sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.container {
+    height: 400px;
+    width: 375px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.container .celender {
+    height: 100%;
+}
+
+.container .celender .top {
+    height: 30%;
+    background-color: rgb(15, 152, 81);
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .celender .top h1 {
+   margin-bottom: 10px;
+}
+
+
+.container .celender .bottom {
+    background-color: black;
+    height: 70%;
+}
+
+
+.container .celender .bottom .days_n {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    height: 10%;
+}
+
+.container .celender .bottom .days_n > div {
+    padding: 5px 0px;
+}
+
+
+.container .celender .bottom .days {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 90%;
+}
+
+.container .celender .bottom .days > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .celender .bottom .days > div:hover {
+    border: 1px solid #808080;
+}
+
+.container .celender .bottom .days .today {
+    background-color: rgb(15, 152, 81);
+
+}
