@@ -8,7 +8,6 @@
 
 body {
     height: 100vh;
-    background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +20,7 @@ body {
     width: 375px;
     border-radius: 10px;
     overflow: hidden;
+    border: 1px solid gray;
 }
 
 
@@ -29,8 +29,10 @@ body {
 }
 
 .container .celender .top {
+    border-bottom: 1px solid gray;
+    background-color: #ccc;
+    color: black;
     height: 30%;
-    background-color: rgb(15, 152, 81);
     display: flex;    
     justify-content: center;
     align-items: center;
@@ -43,7 +45,7 @@ body {
 
 
 .container .celender .bottom {
-    background-color: black;
+    color: #000;
     height: 70%;
 }
 
@@ -53,6 +55,7 @@ body {
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
     height: 10%;
+    border-bottom: 1px solid gray;
 }
 
 .container .celender .bottom .days_n > div {
@@ -79,6 +82,6 @@ body {
 }
 
 .container .celender .bottom .days .today {
-    background-color: rgb(15, 152, 81);
+    background-color: #ccc;
 
 }
